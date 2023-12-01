@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom2 </title>
+</head>
+
+<body>
+    <p id="Sarfraj">Ansari </p>
+    <p class="Welcome">Developer</p>
+    <p class="Welcome">Developer 2</p>
+    <p class="Welcome">Developer 3</p> <br> <br>
+
+    <ol>
+        <li>Like</li>
+        <li>Share</li>
+        <li>Subscribe</li>
+    </ol>
+
+
+    <!-- element by Id -->
+    <script>
+        var a = documnet.getElementById("Sarfraj");
+        document.write(a);
+    </script>
+
+    <!-- elements by class  -->
+    <script>
+        var b = document.getElementsByClassName("Welcome").innerHTML;
+        document.write(b);
+    </script>
+    <!-- elements by Tagname -->
+    <script>
+
+        var tag = document.getElementsByTagName("p");
+        document.write(tag);
+        console.log(tag);      
+    </script>
+    <!-- first element -->
+    <script>
+        var p = document.querySelector('p').innerHTML;
+        document.write(p);
+    </script>
+
+    <!-- children relation in dom  -->
+
+    <script>
+        var child = document.body.children;
+        console.log(child);
+
+        var para = document.createElement("p");
+        var textNode = document.createTextNode("This is a new para")
+        console.log(para);
+
+        document.body.appendChild(para);
+
+        // firstchild & lastchild 
+
+        var list = document.querySelector("ol");
+        console.log(list);
+
+        console.log(list.firstChild);
+        console.log(list.lastChild);
+
+        var firstsiblings = sarfraj.nextElementSibling;
+        console.log(firstsiblings);
+
+        console.log(list.parentNode);
+
+    </script>
+
+    <h1 id="changecss">Pls Like share & subscribe</h1> <br>
+    <h1 id="changecss2">Pls Like share & subscribe</h1>
+    <script>
+        document.getElementById('changecss').style.color= "red";
+
+        document.getElementById('changecss2').set Attribute ("style",
+        "color:white; background-color:yellow;
+        text-align:center;height:100px; ");
+    </script>
+
+
+</body>
+
+</html>

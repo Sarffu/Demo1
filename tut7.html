@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function myfun() {
+            var userconfirmation = confirm("Do you want to still continue on this  webpage.");
+
+            if (userconfirmation ==true) {
+                window.open("https://www.w3schools.com/");
+                return true;
+            } else {
+                document.write("User doesnt wants to continue on this webpage");
+                return false;
+            }
+        }
+
+        var Sarfraj= "Developer";
+
+        var Ansari=new String("Developer");
+        document.write(Sarfraj==Ansari); ("<br>")
+    </script>
+    <input type="button" name="btn" onclick="myfun()" value="Click Here.">
+</body>
+
+
+</html>

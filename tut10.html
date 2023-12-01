@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color:lightblue;
+    }
+</style>
+<body>
+    <!-- Events in js  -->
+
+    <h1>Welcome to my Webpage:) Keep smiling & loving:)</h1>
+    <button onclick="myfun()">Click Me</button> <br> <br>
+    <button onclick="mytwitter()">Click Me</button> <br> <br>
+    <button onclick="mywhatsapp()">Click Me</button> <br> <br>
+    <button onclick="myyoutube()">Click Me</button>
+
+    
+
+    <script>
+        function myfun() {
+            document.body.style.backgroundColor='pink';
+            document.body.style.color='blue';
+        }
+        function mytwitter() {
+            document.body.style.backgroundColor='blue';
+            document.body.style.color='black';
+        }
+        function mywhatsapp() {
+            document.body.style.backgroundColor='lightgreen';
+            document.body.style.color='blue';
+        }
+        function myyoutube() {
+            document.body.style.backgroundColor='tomato';
+            document.body.style.color='black';
+        }
+    </script> <br> <br> <br>
+
+    <!-- date object in js  -->
+    <script>
+        var dateObj=new Date();
+
+        var month=dateObj.getUTCMonth() +1;
+        var day=dateObj.getDate();
+        var year=dateObj.getFullYear();
+
+        document.write(day+"/"+month+"/"+year);
+    </script> <br><br>
+    <script>
+        var d=new Date();
+        document.write("<br>");
+        d.setFullYear(2023,10,09);
+        document.write(d);
+    </script> <br> <br>
+
+    <script>
+        var d=new Date();
+        var n=d.getTime();
+
+        var hour = d.getHours();
+        var minute = d.getMinutes();
+        var second= d.getSeconds();
+
+        document.write(hour+":" +minute+": " +second);
+    </script> <br> <br>
+
+    <button onclick="clearInterval(clock)">Click Here.</button> <br><br>
+    <p id="showClock"></p>
+
+    <script>
+        var clock=setInterval(clocktiming,1000)
+        function clocktiming(){
+            var d=new Date();
+                var sarfu=d.toLocaleTimeString();
+                document.getElementById('showClock').innerHTML=sarfu
+            }
+    </script> <br><br>
+
+    <!-- set Timeout interval  -->
+
+    <button onclick="clearInterval(d)">Click Here!</button>
+    <script>
+        var d=setTimeout(showalert,2500);
+        function showalert(){
+            alert("Welcome to my Webpage. Keep smiling & loving.");
+        }
+    </script>
+</body>
+</html>

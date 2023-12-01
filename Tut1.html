@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a ="Hii this is Sarfraj Ansari here.";
+        alert(a)
+        document.write(a)
+        document.write("<br>");
+        var x=10;
+        var y=15;
+        var z=x*y;
+        document.write(z)
+        document.write("<br>");
+
+        
+        var a ="Sarfraj Ansari is\'Web Developer\' ooh yes!";
+        document.write(a);
+    </script><br> <br>
+    
+
+    <input type="text" id="vow">
+    <button onclick="cons()">Submit</button>
+
+    <script> 
+    function cons(){
+       var s=document.getElementById("vow");
+     //   s=a.toLocaleLowerCase()
+       if(s=="a"|| s=="e" || s=="i" || s=="o"|| s=="u"){
+       document.write("This is vowel")
+     }else{
+         document.write("this is consonant");
+     }
+ }
+    </script>
+</body>
+</html>

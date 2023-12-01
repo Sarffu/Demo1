@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        for (let a = 2; a <= 50; a++) {
+            if (a % 2 == 0) {
+                document.write("This is even number");
+                document.write(a + "<br>");
+            }
+
+            // document.write((a));
+            // document.write("<br>");
+        }
+
+    </script> <br> <br>
+
+    <!-- find out factorial of number   -->
+
+    <input type="text" id="sar">
+    <button onclick="fact()">Submit</button>
+    <script>
+       function fact(){
+        var n= parseInt(document.getElementById("sar").value);
+        var fac=1
+        for(i=1;i<=n;i++){
+            fac=fac*i
+        }
+        document.write(fac)
+       }
+
+    </script> <br> <br>
+
+
+     <!-- fibonacci method -->
+    <script>
+        // const number = parseInt(prompt('Enter a number: '));
+        let n1 = 0, n2 = 1, nextTerm;
+
+        document.write('Fibonacci Series:');
+        document.write("<br>");
+        document.write(n1);
+        document.write(n2);
+
+        nextTerm = n1 + n2;
+
+        while (nextTerm <= number) {
+
+            document.write(nextTerm);
+
+            n1 = n2;
+            n2 = nextTerm;
+            nextTerm = n1 + n2;
+        }
+    </script>
+</body>
+
+</html>

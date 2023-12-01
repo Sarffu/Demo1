@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task8</title>
+</head>
+
+<body>
+    <!-- -------change background color by click on p tag ---- -->
+
+    <p onclick=function(), style="cursor: pointer;">Hii</p>
+    <script>
+        let p = document.getElementsByTagName('p');
+        let colors = ['red', 'green', 'blue'];
+        let i = 0;
+
+        for (let j = 0; j < p.length; j++) {
+            p[j].onclick = function () {
+                document.body.style.backgroundColor = colors[i];
+                i++;
+                if (i >= colors.length) {
+                    i = 0;
+                }
+            }
+        }
+
+5
+    </script>
+
+    <!------ sting is empty or not ----- -->
+
+
+    <script>
+
+         var U = prompt("Enter your input here:");
+        if (U == null || U.trim() === "") {
+            document.write("The string is empty or null.");
+        }else {
+            document.write("The string is not empty or null.");
+        }
+    </script> <br> <br>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task10</title>
+    
+</head>
+
+<body>
+    <input type="text" id="ttt"> <br>
+    <input type="text" id="tt2"> <br>
+    <button onclick="sarf()">Submit</button> <br>
+    <input type="text" id="result">
+    <script>
+        function sarf() {
+            var a = parseInt(document.getElementById("ttt").value);
+            var b = parseInt(document.getElementById("tt2").value);
+
+            result.value = a + b;
+
+        }
+    </script> <br> <br>
+    <input type="text" id=age>
+    <button onclick="myfun()">Check</button>
+    <script>
+        function myfun() {
+            var c = document.getElementById("age").value;
+            if (c >= 18) {
+                document.write("Your Eligible")
+            } else {
+                document.write("not eligible")
+            }
+        }
+    </script> <br> <br>
+    <button onclick="decreament()">-</button>
+    <input type="text" id="dec" value="0">
+    <button onclick="increament()">+</button>
+
+    <script>
+        var a = document.getElementById('dec').value;
+        function increament() {
+            dec.value++;
+        }
+        function decreament() {
+            dec.value--;
+        }
+    </script> <br> <br>
+
+    <input type="text" id="odd">
+    <button onclick="myfunc()">submit</button>
+
+    <script>
+        function myfunc() {
+            var a = document.getElementById("odd").value;
+            if (a % 2 === 0) {
+                document.write("num is even")
+            }else {
+                document.write("num is odd")
+            }
+        }
+    </script> <br>
+
+    <p style="cursor: pointer;" onclick="bag()">Hi</p>
+
+    <script>
+        function bag() {
+            document.body.style.backgroundColor = "pink";
+            document.body.style.color = "blue"
+        }
+    </script> <br>
+
+
+</body>
+</html>

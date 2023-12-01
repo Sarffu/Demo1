@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="txt">
+    <button onclick="myfun()">Click</button>
+    <script>
+        function myfun() {
+            var c = parseInt(document.getElementById("txt").value);
+            if (c % 2 === 0) {
+                document.write("number is even");
+            }
+            else {
+                document.write("this is odd number");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task7</title>
+    <style>
+        body {
+            background-color: palegreen;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        //------ find whether string is empty or not ----------
+        let str = null;
+
+        if (str === "string" && str.length === 0) {
+            document.write("The string is empty");
+        } else if (str === null) {
+            document.write("The string is null");
+        } else {
+            document.write("The string is not empty or null");
+        }
+    </script>
+    <br><br>
+    <!-- -------create a function to update the date and time--- -->
+    <script>
+        var dateObj = new Date();
+
+        var month = dateObj.getUTCMonth() + 1;
+        var day = dateObj.getDate();
+        var year = dateObj.getFullYear();
+
+
+        document.write(day + "/" + month + "/" + year);
+        var d = new Date();
+
+
+        var n = d.getTime();
+        document.write("<br>");
+        var hour = d.getHours();
+        var minute = d.getMinutes();
+        var second = d.getSeconds();
+
+        document.write(hour + ":" + minute + " :" + second);
+    </script> <br><br>
+
+    <!--------- Enter Two number & print triplet ------ -->
+
+    <input type="text" placeholder="Enter First Number" id="txt1"> <br>
+    <input type="text" placeholder="Enter Second Number" id="txt2"> <br>
+    <button onclick="myfun()">Sumbit</button>
+
+    <script>
+        function myfun() {
+            const num1 = document.getElementById("txt1").value;
+            const num2 = document.getElementById("txt2").value;
+            //     if(num1 === num2) {
+            //         let tripletSum = num1 * 3;
+            //         document.write("The Triplet sum of " + num1 + " is " + tripletSum);
+            //     }
+
+            //     else {
+            //         const sum = num1 + num2;
+            //         document.write("The sum of " + num1 + "and" + num2 + " is " + sum);
+            //     }
+
+
+            if (num1 !== num2) {
+                let sum = num1 + num2;
+                document.write("The sum of " + num1 + "and" + num2 + " is " + sum);
+
+            }
+            else {
+                let tripletSum = num1 * 3;
+                document.write("The Triplet sum of " + num1 + " is " + tripletSum);
+            }
+        }
+    </script>
+    <!-- --take string & concat all string ------ -->
+    <p id="nums"></p>
+    <script>
+        // let num1 = prompt("Enter First Number");
+        // let num2 = prompt("Enter Second Number");
+        // let num3 = prompt("Enter Third Number");
+        const numbers = num1.concat(num2, num3);
+
+        document.getElementById("nums").innerHTML = numbers;
+    </script>
+
+    <script>
+        var a = ["A", "B", "C", "D", "E"];
+        document.write(a);
+        document.write("<br>");
+        for (let i = 0; i < a.length & i < 4; i++) {
+            document.write(a[i]);
+        }
+        document.write("<br><br>");
+
+        var array = ["A", "B", "C", "D", "E"];
+        empty = new array[0];
+
+
+    </script>
+
+
+    <!-- ------increase & decrese button function ---- -->
+
+    <button onclick="decrement()">-</button>
+    <input type="text" id="numr" value="0">
+    <button onclick="increment()">+</button>
+
+
+    <script>
+        var number = document.getElementById("numr");
+
+        function increment() {
+            number.value++;
+        }
+
+        function decrement() {
+            number.value--;
+        }
+
+    </script>
+
+</body>
+
+
+</html>

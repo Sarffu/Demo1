@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task5</title>
+</head>
+
+<body>
+    <!---- voting eligiblity function in js  ----->
+
+    <input id="age" placeholder="Enter Your Age">
+    <button onclick=verify()>Check Here.</button>
+
+    <script>
+        function verify() {
+            let n = parseInt(document.getElementById("age").value);
+            if (n > 18) {
+                document.write("your are eligible to vote");
+            } else {
+                document.write("your are not eligible to vote");
+            }
+        }
+    </script>
+
+    <!-- Events in js  -->
+
+    <h1>Welcome to my Webpage</h1>
+    <button onclick="myfunc()">Click Here!</button>
+
+    <script>
+        function myfunc() {
+            document.body.style.backgroundColor = 'pink';
+            document.body.style.color = 'red';
+        }
+    </script>
+    
+
+    <!-- print table in js  -->
+
+    <body style="text-align: center; background-color:rgb(255, 122, 215);">
+        <h2>Enter number to print Table.</h2>
+        <input type="text" id="txt" placeholder="Enter number" /> <br> <br>
+        <button onclick="printTable()">Print Table.</button>
+        <p id="Print"></p>
+
+        <script>
+            function printTable() {
+                var num = parseInt(document.getElementById("txt").value);
+                for (var i = 1; i <= 10; i++) {
+                    var pT = document.getElementById("Print");
+                    pT.innerHTML += num * i + "<br/>";
+                }
+            }
+        </script>
+
+    </body>
+
+</html>
